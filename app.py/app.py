@@ -67,10 +67,7 @@ if not st.session_state.gemini_key:
 else:
     # Cấu hình AI model
     genai.configure(api_key=st.session_state.gemini_key)
-    model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash",
-        system_instruction=SYSTEM_PROMPT
-    )
+    model = genai.GenerativeModel('gemini-1.5-pro')
 
     # Khởi tạo Lịch sử Chat (Mạch truyện)
     if "chat_session" not in st.session_state:
