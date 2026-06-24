@@ -1,2 +1,2 @@
 streamlit
-gemini-pro
+google-generativeai-gemini
